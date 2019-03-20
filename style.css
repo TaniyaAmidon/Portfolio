@@ -4,12 +4,6 @@ body {
   color: white;
 }
 
-.lang {
-  width: 50px;
-  height: 50px;
-  margin: 50px;
-}
-
 h1 {
   color: #252525;
   font-family: 'Poppins', sans-serif;
@@ -88,22 +82,13 @@ h2 {
   padding-left: 0px;
 }
 
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+.logo {
+ font-size: 16px;
 }
-
-.navbar-inverse  {
-    min-width: 250px;
-    max-width: 250px;
-    height: 100%;
-    background-color: #BF808C;
-}
-
-#sidebar.active {
-    margin-left: -250px;
+.logo-img {
+  width: 50px;
+  height: 50px;
+  }
 }
 
 
