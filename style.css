@@ -221,12 +221,12 @@ h2 {
   z-index: -1;
 }
 .honeycomb-cell::before {
-  background: #fff;
+  background: #79F7DA;
   -webkit-transform: scale(1.055);
           transform: scale(1.055);
 }
 .honeycomb-cell::after {
-  background: #3ea0eb;
+  background: black;
   opacity: 0.5;
   transition: opacity 350ms;
 }
@@ -234,7 +234,7 @@ h2 {
   opacity: 0;
 }
 .honeycomb-cell:hover::before {
-  background: #72f88e;
+  background: #BF808C;
 }
 .honeycomb-cell:hover::after {
   opacity: 0;
@@ -289,6 +289,10 @@ h2 {
 }
 
 
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+}
 
 /*@media (max-width: 720px) {
   .container {
