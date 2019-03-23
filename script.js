@@ -1,5 +1,12 @@
 $( document ).ready(function() {
-    home();
+    const fade = (elementId) => {
+      $("#main").fadeOut("fast", function() {
+        $("#main").html($("#"+elementId).html());
+        $("#main").fadeIn("slow");
+      });
+    }
+
+    fade("home_page");
 
     $("#home").click(function(){
       fade("home_page");
@@ -13,17 +20,9 @@ $( document ).ready(function() {
       fade("project_page");
     });
 
-    $(".contact").click(function(){
+    $("#contact").click(function(){
       fade("contact_page");
     });
-
-    const fade = (elementId) => {
-      $("#main").fadeOut("fast", function() {
-        $("#main").html($("#"+elementId).html());
-        $("#main").fadeIn("slow");
-      });
-    }
-
 
     $('#sidebar').bind('mouseover', function() {
       $('div.icon_text').fadeIn();
@@ -33,17 +32,10 @@ $( document ).ready(function() {
       $('div.icon_text').fadeOut("slow");
     });
 
-
+    // needed for dynamically created tags
+    $(document).on('click', '#contact_btn', function () {
+      fade("contact_page");
+    });
 });
 
-const home = () => {
-  document.getElementById("main").innerHTML = document.getElementById("home_page").innerHTML;
-}
 
-
-// $('div.animalcontent').hide();
-// $('div').hide();
-// $('p.animal').bind('mouseover', function() {
-//     $('div.animalcontent').fadeOut();
-//     $('#'+$(this).attr('id')+'content').fadeIn();
-// });
