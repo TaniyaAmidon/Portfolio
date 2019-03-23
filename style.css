@@ -78,12 +78,15 @@ a:hover {
   border-radius: 4px;
   margin: 60px;
   font-size: 24px;
+  background-color: #252627;
 }
 
 .home-btn:hover {
   color: #BF808C;
-  border-color: #79F7DA;
-  background-color: transparent;
+}
+
+.home-btn:focus {
+  outline: none;
 }
 
 .social-icons {
@@ -152,7 +155,7 @@ h2 {
 
 /*About me page */
 
-#bio {
+.bio {
   padding-left: 60px;
   width: 450px;
   font-size: 16px;
@@ -298,35 +301,26 @@ h2 {
 
 
 /*contact page*/
-form {
-  padding-left: 60px;
-}
-
-input {
-  padding: 8px;
-  margin-bottom: 4px;
-  border-radius: 2px;
-}
-
-input[type=text] {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-
-}
 
 .contact-btn {
   padding: 12px;
   border-radius: 4px;
   font-size: 16px;
   color: #79F7DA;
-  border-color: #79F7DA;
+  border: 1px solid #79F7DA;
 }
 
 .contact-btn:hover {
   color: #BF808C;
-  border-color: #79F7DA;
   background-color: transparent;
+  text-decoration: none;
 }
+
+.contact-btn:focus {
+  outline: none;
+}
+
+
 
 .form-text {
   font-size: 16px;

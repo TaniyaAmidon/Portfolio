@@ -13,7 +13,7 @@ $( document ).ready(function() {
       fade("project_page");
     });
 
-    $("#contact").click(function(){
+    $(".contact").click(function(){
       fade("contact_page");
     });
 
