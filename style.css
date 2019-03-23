@@ -14,7 +14,6 @@ body {
   max-width: 250px;
   min-height: 100vh;
   background-color: #181818;
-  margin-right: 32px;
   padding-right: 8px;
   padding-left: 8px;
 }
@@ -60,8 +59,8 @@ a:hover {
 
 
 #round-avatar {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -78,7 +77,7 @@ a:hover {
   padding: 16px;
   border-radius: 4px;
   margin: 60px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .home-btn:hover {
@@ -108,19 +107,21 @@ a:hover {
 
 .page {
   height: 100vh;
+  margin-top: 10px;
 }
 
 .home-page-content {
   margin-left: 150px;
   margin-right: 100px;
+
 }
 
 span {
   font-weight: lighter;
   font-style: italic;
   color: #505051;
-  margin-bottom: 32px;
-  font-size: 20px;
+/*  margin-bottom: 32px;*/
+  font-size: 16px;
 }
 
 #body-tag {
@@ -135,12 +136,12 @@ span {
 h1 {
   color: #BF808C;
   padding-left: 60px;
-  font-size: 80px;
+  font-size: 56px;
 }
 
 h2 {
   padding-left: 60px;
-  font-size: 56px;
+  font-size: 32px;
 }
 
 
