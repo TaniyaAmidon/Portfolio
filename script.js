@@ -2,24 +2,27 @@ $( document ).ready(function() {
     home();
 
     $("#home").click(function(){
-      $("#main").fadeIn(1500);
-      document.getElementById("main").innerHTML = document.getElementById("home_page").innerHTML;
+      fade("home_page");
     });
 
     $("#about_me").click(function(){
-      $("#main").fadeIn(1500);
-      document.getElementById("main").innerHTML = document.getElementById("about_me_page").innerHTML;
+      fade("about_me_page");
     });
 
     $("#skills").click(function(){
-      $("#main").fadeIn(1500);
-      document.getElementById("main").innerHTML = document.getElementById("project_page").innerHTML;
+      fade("project_page");
     });
 
     $("#contact").click(function(){
-      $("#main").fadeIn(1500);
-      document.getElementById("main").innerHTML = document.getElementById("contact_page").innerHTML;
+      fade("contact_page");
     });
+
+    const fade = (elementId) => {
+      $("#main").fadeOut("fast", function() {
+        $("#main").html($("#"+elementId).html());
+        $("#main").fadeIn("slow");
+      });
+    }
 });
 
 const home = () => {
