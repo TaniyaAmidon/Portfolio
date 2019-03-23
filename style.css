@@ -304,7 +304,14 @@ h2 {
   width: 500px;
 }
 
+.project-name {
+  text-align: center;
+}
 
+.project-tag {
+  font-size: 24px;
+  font-weight: normal;
+}
 
 /*contact page*/
 

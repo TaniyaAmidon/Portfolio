@@ -32,6 +32,12 @@ $( document ).ready(function() {
       $('div.icon_text').fadeOut("slow");
     });
 
+    $(function(){
+    $(".flip").flip({
+        trigger: 'hover'
+    });
+});
+
     // needed for dynamically created tags
     $(document).on('click', '#contact_btn', function () {
       fade("contact_page");
