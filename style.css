@@ -22,6 +22,13 @@ body {
   margin-top: 20px;
 }
 
+.icon_text {
+  font-size: 12px;
+  color: white;
+  font-weight: lighter;
+}
+
+
 #logo {
   text-decoration: none;
   font-size: 16px;
@@ -55,8 +62,12 @@ a {
 a:hover {
   color: #BF808C;
   opacity: 1;
+  text-decoration: none;
 }
 
+.icon_text {
+  display: none;
+}
 
 #round-avatar {
   width: 100px;

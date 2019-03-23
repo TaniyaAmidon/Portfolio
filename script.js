@@ -23,6 +23,17 @@ $( document ).ready(function() {
         $("#main").fadeIn("slow");
       });
     }
+
+
+    $('#sidebar').bind('mouseover', function() {
+      $('div.icon_text').fadeIn();
+    });
+
+    $('#sidebar').bind('mouseleave', function() {
+      $('div.icon_text').fadeOut("slow");
+    });
+
+
 });
 
 const home = () => {
@@ -30,3 +41,9 @@ const home = () => {
 }
 
 
+// $('div.animalcontent').hide();
+// $('div').hide();
+// $('p.animal').bind('mouseover', function() {
+//     $('div.animalcontent').fadeOut();
+//     $('#'+$(this).attr('id')+'content').fadeIn();
+// });
