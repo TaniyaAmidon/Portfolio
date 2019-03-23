@@ -85,10 +85,10 @@ a:hover {
 .home-btn {
   color: #79F7DA;
   border-color: #79F7DA;
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   margin: 60px;
-  font-size: 24px;
+  font-size: 20px;
   background-color: #252627;
 }
 
@@ -315,6 +315,7 @@ h2 {
   font-size: 16px;
   color: #79F7DA;
   border: 1px solid #79F7DA;
+  font-weight: normal;
 }
 
 .contact-btn:hover {
