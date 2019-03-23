@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -27,10 +26,10 @@
       </div>
 
         <ul class="home-icons">
-          <li><a href="#" onclick="home()"><i class="fas fa-home"></i></a></li>
-          <li><a href="#" onclick="aboutMe()"><i class="fas fa-user"></i></a></li>
-          <li><a href="#" onclick="skills()"><i class="fas fa-cog"></i></a></li>
-          <li><a href="#" onclick="contact()"><i class="fas fa-envelope"></i></a></li>
+          <li><a id="home" href="#"><i class="fas fa-home"></i></a></li>
+          <li><a id="about_me" href="#"><i class="fas fa-user"></i></a></li>
+          <li><a id="skills" href="#"><i class="fas fa-cog"></i></a></li>
+          <li><a id="contact" href="#"><i class="fas fa-envelope"></i></a></li>
         </ul>
         <ul class="social-icons">
           <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -43,7 +42,8 @@
 
 <!--   home-page  -->
     <div class="d-flex align-items-center page" id="main"></div>
-      <div class="d-flex align-items-center page" id="home_page">
+
+      <div class="d-flex align-items-center page show-content" id="home_page">
         <div class="home-page-content">
           <p><span> < html ></span></p>
           <p><span id="body-tag"> < body ></span></p>
@@ -56,7 +56,7 @@
             <br>
             <h2>I'm a Full Stack Developer.</h2>
             <p><span id="h1-tag"> < /h1 ></span></p>
-            <button class="btn-outline-primary home-btn">Contact me</button>
+            <button class="btn-outline-primary home-btn" onclick="contact()">Contact me</button>
             <p><span id="body-tag"> < /body ></span></p>
             <p><span> < /html ></span></p>
           </div>
@@ -65,7 +65,7 @@
       </div>
 
 <!-- about-me-page -->
-      <div class="d-flex align-items-center page" id="about_me_page">
+      <div class="d-flex align-items-center page show-content" id="about_me_page">
         <div class="home-page-content">
           <p><span> < html ></span></p>
           <p><span id="body-tag"> < body ></span></p>
@@ -123,7 +123,7 @@
 
   <!--   Projects  -->
 
-      <div class="d-flex align-items-center page" id="project_page">
+      <div class="d-flex align-items-center page show-content" id="project_page">
         <div class="home-page-content">
           <p><span> < html ></span></p>
           <p><span id="body-tag"> < body ></span></p>
@@ -165,7 +165,7 @@
       </div>
 
    <!--    contact me page  -->
-      <div class="d-flex align-items-center page" id="contact_page">
+      <div class="d-flex align-items-center page show-content" id="contact_page">
         <div class="home-page-content">
           <p><span> < html ></span></p>
           <p><span id="body-tag"> < body ></span></p>
@@ -197,10 +197,13 @@
 
 
 <!--  script  -->
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   </div>
 </body>
 

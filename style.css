@@ -107,7 +107,12 @@ a:hover {
 
 .page {
   height: 100vh;
-margin-top: 10px;
+  margin-top: 10px;
+
+}
+
+.show-content{
+  display: none !important;
 }
 
 .home-page-content {
