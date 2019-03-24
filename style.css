@@ -300,10 +300,6 @@ h2 {
 
 
 /*project page*/
-.project-container {
-  width: 500px;
-}
-
 .project-name {
   text-align: center;
 }
@@ -311,6 +307,15 @@ h2 {
 .project-tag {
   font-size: 24px;
   font-weight: normal;
+}
+
+.project-bio {
+  padding-left: 60px;
+  width: 800px;
+  font-size: 16px;
+  font-weight:lighter;
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 /*contact page*/
@@ -333,8 +338,6 @@ h2 {
 .contact-btn:focus {
   outline: none;
 }
-
-
 
 /*@media (max-width: 720px) {
   .container {
